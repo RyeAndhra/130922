@@ -1,19 +1,44 @@
+<head>
+    <title>Buku</title>
+</head>
+
 <?php
 
-include "header.php";
+    include "header.php";
 
 ?>
 
-<h2>Daftar Buku</h2>
-<div class="row">
+<!-- Masthead-->
+    <header class="masthead">
+        <div class="container px-4 px-lg-5 h-100">
+            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-8 align-self-end">
+                    <h1 class="text-white font-weight-bold">Perpus Online - Buku</h1>
+                    <hr class="divider" />
+                </div>
+                <div class="col-lg-8 align-self-baseline">
+                    <p class="text-white-75 mb-5">Silahkan Pinjam Buku!</p>
+                    <a class="btn btn-primary btn-xl" href="#buku">Daftar Buku</a>
+                </div>
+            </div>
+        </div>
+    </header>
 
-    <?php
-    
-    include "koneksi.php";
-    $qry_buku = mysqli_query($conn, "select * from buku");
-    while($dt_buku = mysqli_fetch_array($qry_buku)) {
+    <section class="page-section"></section>
+    <div class="container-fluid p-0"  id="buku">
+        <h2 class="text-center mt-0">Daftar Buku</h2>
+        <hr class="divider" />
+    </div>
+    <div class="container bg-light rounded" style="margin-top:10px">
+    <div class="row">
+
+        <?php
         
-    ?>
+            include "koneksi.php";
+            $qry_buku = mysqli_query($conn, "select * from buku");
+            while($dt_buku = mysqli_fetch_array($qry_buku)) {
+            
+        ?>
 
         <div class="col-md-3">
         <div class="card">
@@ -26,16 +51,16 @@ include "header.php";
         </div>
         </div>
 
-    <?php
+        <?php
 
-    }
+            }
 
-    ?>
+        ?>
 
-</div>
-
-<br>
-<a href="tambah_buku.php" class="btn btn-primary">Tambah Buku</a>
+    </div>
+    <br>
+    <a href="tambah_buku.php" class="btn btn-primary">Tambah Buku</a>
+    </div>
 
 <?php
 

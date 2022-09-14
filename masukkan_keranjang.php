@@ -11,6 +11,6 @@
             'qty'=>$_POST['jumlah_pinjam']
         );
     }
-    header('location: keranjang.php');
+    header('location: keranjang.php #cart');
 
 ?>
