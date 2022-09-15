@@ -7,6 +7,8 @@
 
 ?>
 
+<title>Pinjam Buku</title>
+
 <!-- Masthead-->
 <header class="masthead">
         <div class="container px-4 px-lg-5 h-100">
