@@ -46,7 +46,7 @@ if($_SESSION['status_login'] != true) {
                         <li class="nav-item"><a aria-current="page" class="nav-link" href="#page-top">Home</a></li>
                         <li class="nav-item"><a aria-current="page" class="nav-link" href="#about">About</a></li>
                         <li class="nav-item"><a aria-current="page" class="nav-link" href="#portfolio">Books</a></li>
-                        <li class="nav-item"><a aria-current="page" class="nav-link" href="#pinjam">Pinjam Sekarang!</a></li>
+                        <li class="nav-item"><a aria-current="page" class="nav-link" href="buku.php #buku">Pinjam Sekarang!</a></li>
                         <li class="nav-item"><a aria-current="page" class="nav-link" href="logout.php" onclick="return confirm('Apakah anda yakin ingin Logout?')">Logout</a></li>
                     </ul>
                 </div>
@@ -171,7 +171,7 @@ if($_SESSION['status_login'] != true) {
         <section class="page-section bg-dark text-white" id="pinjam">
             <div class="container px-4 px-lg-5 text-center">
                 <h2 class="mb-4">Gratis Pinjam Buku di Perpus Online!</h2>
-                <a class="btn btn-light btn-xl" href="buku.php">Pinjam Sekarang!</a>
+                <a class="btn btn-light btn-xl" href="buku.php #buku">Pinjam Sekarang!</a>
             </div>
         </section>
         <!-- Bootstrap core JS-->
